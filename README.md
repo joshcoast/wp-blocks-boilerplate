@@ -6,22 +6,23 @@ A good starting point for creating your own WordPress custom blocks for Gutenber
 
 ### Requirements:
 
-- WordPress Version: 4.9.8 or higher
+- WordPress Version: 4.9.8 or higher https://wordpress.org/download/
 - Gutenberg Version: 3.7.0 or higher https://github.com/WordPress/gutenberg
 
 ### Recommended:
 Gutenberg Starter Theme: https://github.com/WordPress/gutenberg-starter-theme/
 
-I've included a custom block in this repo. To get it working, you need to copy this repo to your plugins directory in your WordPress install `/wp-content/plugins/wp-blocks-boilerplate`. After you've done that, you can turn it on in the WordPress admin `https://example.com//wp-admin/plugins.php` and activate "JoshBlocks". 
+I've included a custom block in this repo. To get it working, you'll need to copy this repo to your plugins directory in your WordPress install `/wp-content/plugins/wp-blocks-boilerplate`. After you've done that, you can turn it on in the WordPress admin `https://example.com//wp-admin/plugins.php` and activate "JoshBlocks". 
 
-JoshBlocks should work on any WP site that's also running the Gutenberg Plugin. There are features that only work on a theme that fully utilize the new Gutenberg plugin. As such, I recommend using the Gutenberg Starter Theme. There are other themes that utilize Gutenberg, but this one is nice and clean and easy to experiment with. Also, I think it helps that it's created and maintained by WordPress itself. 
+JoshBlocks should work on any WP site that's also running the Gutenberg Plugin (note requirements above). There are features that only work on a theme that fully utilize the new Gutenberg plugin. As such, I recommend using the Gutenberg Starter Theme. There are other themes that utilize Gutenberg, but this one is nice and clean and easy to experiment with. Also, I think it helps that it's created and maintained by the people at WordPress. 
 
 ## Get local development build up and running:
 
-1. Within wp-blocks-boilerplate root, run `npm install`. This will get all the packages needed to run a basic build environment. 
+1. Within `wp-blocks-boilerplate` root, run `npm install`. This will get all the packages needed to run a basic build environment. 
 2. Run the command `npm run dev`. This will get the dev process running. It will get webpack running and watching the development files for changes.
 3. The `/assets` directory is where all the compiled files are placed, so don't try and edit stuff there. :)
 4. You'll mostly be concerned with editing and creating files in `/blocks`. As you make new blocks, this is where you will put them. The example block is called `picture-block`. 
+5. After you're done editing, run `npm run build`. This will compile a compressed version of the plugin for you. To have a look at these commands in more depth, start by checking out the `package.json` scripts commands. 
 
 ## Get started making new blocks:
 
