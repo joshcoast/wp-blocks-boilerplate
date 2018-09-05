@@ -5,8 +5,9 @@ A good starting point for creating your own WordPress custom blocks for Gutenber
 ## Turn on the Custom Blocks
 
 ### Requirements:
-WordPress Version: 4.9.8 or higher
-Gutenberg Version: 3.7.0 or higher https://github.com/WordPress/gutenberg
+
+- WordPress Version: 4.9.8 or higher
+- Gutenberg Version: 3.7.0 or higher https://github.com/WordPress/gutenberg
 
 ### Recommended:
 Gutenberg Starter Theme: https://github.com/WordPress/gutenberg-starter-theme/
