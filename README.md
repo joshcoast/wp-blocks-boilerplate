@@ -1,4 +1,4 @@
-# wp-blocks-boilerplate
+# WordPress Gutenberg Custom Blocks Boilerplate
 
 A good starting point for creating your own WordPress custom blocks for Gutenberg.
 
