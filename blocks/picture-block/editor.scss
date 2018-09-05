@@ -1,0 +1,114 @@
+.wp-block-joshblocks-image-upload {
+  .image-wrapper,
+  .image-block {
+    position: relative;
+  }
+  .no-image {
+    background-color: rgba(57, 126, 187, 0.199);
+  }
+  button {
+    &.remove-image {
+      background-color: red;
+      border: 2px red solid;
+      padding: 5px 5px 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: .75;
+      svg {
+        background: red;
+        fill: white;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &.add-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:active {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  [data-type="joshblocks/image-upload"][data-align="left"]::after,
+  [data-type="joshblocks/image-upload"][data-align="right"]::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  [data-type="joshblocks/image-upload"][data-align="left"], 
+  [data-type="joshblocks/image-upload"][data-align="right"] {
+    height: auto !important;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    .editor-block-list__block-edit {
+      width: 100%;
+    }
+  }
+  [data-type="joshblocks/image-upload"][data-align="left"] {
+    padding-right: 25%;
+  }
+  [data-type="joshblocks/image-upload"][data-align="right"] {
+    padding-left: 25%;
+  }
+  [data-type="joshblocks/image-upload"][data-align="center"] {
+    .wp-block-joshblocks-image-upload {
+      display: block;
+    }
+    .message-body {
+      width: 100%;
+      text-align: left;
+    }
+    .image-block {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wp-block-joshblocks-image-upload {
+    background-color: #e0e0e0;
+    display: block;
+    .message-body {
+      padding: 2em;
+      width: 100%;
+      p:first-child {
+        margin-top: 0;
+      }
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .image-block {
+      min-height: 50vh;
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+    }
+    &.alignfull {
+      padding: 0;
+      .message-body {
+        padding: 2em;
+      }
+    }
+    &.alignful,
+    &.alignwide,
+    &.alignleft,
+    &.alignright,
+    &.aligncenter {
+      padding: 0;
+    }
+  }
+  [data-type="joshblocks/image-upload"][data-align="left"] {
+    padding-right: 0;
+  }
+}

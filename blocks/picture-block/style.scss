@@ -1,0 +1,85 @@
+.wp-block-joshblocks-image-upload {
+  background-color: #eeeeee;
+  .message-body {
+    padding: 2em;
+    p:first-child {
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .image-block {
+    min-height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+  &.alignfull {
+    padding: 0;
+    .message-body {
+      padding: 2em;
+    }
+  }
+  &.alignful,
+  &.alignwide,
+  &.alignleft,
+  &.alignright,
+  &.aligncenter {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wp-block-joshblocks-image-upload {
+    display: flex;
+    min-height: 45vh;
+    .message-body {
+      width: 50%;
+    }
+    .image-block {
+      min-height: 45vh;
+      width: 50%;
+      background-position: center center;
+      background-size: cover;
+    }
+    &.alignleft {
+      max-width: 75% !important;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    &.aligncenter {
+      //max-width: 75% !important;
+      .message-body {
+        width: 100%;
+      }
+      .image-block {
+        width: 100%;
+      }
+    }
+    &.alignright {
+      max-width: 75% !important;
+      margin-left: 25%;
+      margin-right: 0;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .wp-block-joshblocks-image-upload {
+    min-height: 50vh;
+    .message-body {
+      font-size: 1.15em;
+    }
+    &.alignfull {
+      .message-body {
+        padding: 4em;
+      }
+    }
+  }
+}
+
+
+
+
+
+

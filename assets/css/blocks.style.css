@@ -1,0 +1,52 @@
+.wp-block-joshblocks-image-upload {
+  background-color: #eeeeee; }
+  .wp-block-joshblocks-image-upload .message-body {
+    padding: 2em; }
+    .wp-block-joshblocks-image-upload .message-body p:first-child {
+      margin-top: 0; }
+    .wp-block-joshblocks-image-upload .message-body p:last-child {
+      margin-bottom: 0; }
+  .wp-block-joshblocks-image-upload .image-block {
+    min-height: 50vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover; }
+  .wp-block-joshblocks-image-upload.alignfull {
+    padding: 0; }
+    .wp-block-joshblocks-image-upload.alignfull .message-body {
+      padding: 2em; }
+  .wp-block-joshblocks-image-upload.alignful, .wp-block-joshblocks-image-upload.alignwide, .wp-block-joshblocks-image-upload.alignleft, .wp-block-joshblocks-image-upload.alignright, .wp-block-joshblocks-image-upload.aligncenter {
+    padding: 0; }
+
+@media only screen and (min-width: 768px) {
+  .wp-block-joshblocks-image-upload {
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 45vh; }
+    .wp-block-joshblocks-image-upload .message-body {
+      width: 50%; }
+    .wp-block-joshblocks-image-upload .image-block {
+      min-height: 45vh;
+      width: 50%;
+      background-position: center center;
+      background-size: cover; }
+    .wp-block-joshblocks-image-upload.alignleft {
+      max-width: 75% !important;
+      margin-left: 0;
+      margin-right: 0; }
+    .wp-block-joshblocks-image-upload.aligncenter .message-body {
+      width: 100%; }
+    .wp-block-joshblocks-image-upload.aligncenter .image-block {
+      width: 100%; }
+    .wp-block-joshblocks-image-upload.alignright {
+      max-width: 75% !important;
+      margin-left: 25%;
+      margin-right: 0; } }
+
+@media only screen and (min-width: 1024px) {
+  .wp-block-joshblocks-image-upload {
+    min-height: 50vh; }
+    .wp-block-joshblocks-image-upload .message-body {
+      font-size: 1.15em; }
+    .wp-block-joshblocks-image-upload.alignfull .message-body {
+      padding: 4em; } }
